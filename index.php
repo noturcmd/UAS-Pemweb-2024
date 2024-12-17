@@ -81,6 +81,50 @@
             color: white;
             padding: 20px;
             text-align: center;
+
+            .service-card {
+        background-size: cover;
+        background-position: center;
+        color: white;
+        border-radius: 10px;
+        height: 250px; /* Tinggi kartu */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+        .service-card .card-body {
+            z-index: 2; /* Supaya teks di atas background */
+        }
+
+        /* Background untuk setiap layanan */
+        .service-card.train {
+            background-image: url('assets/train.jpg');
+        }
+        .service-card.plane {
+            background-image: url('assets/plane.png');
+        }
+        .service-card.hotel {
+            background-image: url('assets/hotel.jpg');
+        }
+        .service-card.car {
+            background-image: url('assets/car.jpg');
+        }
+
+        /* Overlay untuk membuat teks lebih jelas */
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4); /* Overlay transparan */
+            z-index: 1;
         }
     </style>
 </head>
@@ -125,87 +169,52 @@
             <div class="row g-4">
                 <!-- Train -->
                 <div class="col-md-3">
-                    <div class="card service-card text-center">
+                    <div class="card service-card train text-center">
                         <div class="card-body">
-                            <i class="fas fa-train fa-3x mb-3 text-primary"></i>
+                            <i class="fas fa-train fa-3x mb-3"></i>
                             <h5 class="card-title">Kereta</h5>
                             <p class="card-text">Pesan tiket kereta untuk perjalanan Anda</p>
+                            <a href="Kereta.php" class="btn btn-light">Pesan Sekarang</a>
                         </div>
                     </div>
                 </div>
                 <!-- Plane -->
                 <div class="col-md-3">
-                    <div class="card service-card text-center">
+                    <div class="card service-card plane text-center">
                         <div class="card-body">
-                            <i class="fas fa-plane fa-3x mb-3 text-primary"></i>
+                            <i class="fas fa-plane fa-3x mb-3"></i>
                             <h5 class="card-title">Pesawat</h5>
                             <p class="card-text">Cari tiket pesawat dengan harga terbaik</p>
+                            <a href="Pesawat.php" class="btn btn-light">Pesan Sekarang</a>
                         </div>
                     </div>
                 </div>
                 <!-- Hotel -->
                 <div class="col-md-3">
-                    <div class="card service-card text-center">
+                    <div class="card service-card hotel text-center">
                         <div class="card-body">
-                            <i class="fas fa-hotel fa-3x mb-3 text-primary"></i>
+                            <i class="fas fa-hotel fa-3x mb-3"></i>
                             <h5 class="card-title">Hotel</h5>
                             <p class="card-text">Temukan hotel nyaman untuk perjalanan Anda</p>
+                            <a href="Hotel.php" class="btn btn-light">Pesan Sekarang</a>
                         </div>
                     </div>
                 </div>
                 <!-- Car Rental -->
                 <div class="col-md-3">
-                    <div class="card service-card text-center">
+                    <div class="card service-card car text-center">
                         <div class="card-body">
-                            <i class="fas fa-car fa-3x mb-3 text-primary"></i>
-                            <h5 class="card-title">Rental Mobil</h5>
-                            <p class="card-text">Sewa mobil untuk liburan Anda</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Ship -->
-                <div class="col-md-3">
-                    <div class="card service-card text-center">
-                        <div class="card-body">
-                            <i class="fas fa-ship fa-3x mb-3 text-primary"></i>
-                            <h5 class="card-title">Kapal</h5>
-                            <p class="card-text">Pesan tiket kapal ferry dan pelayaran</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Villa -->
-                <div class="col-md-3">
-                    <div class="card service-card text-center">
-                        <div class="card-body">
-                            <i class="fas fa-home fa-3x mb-3 text-primary"></i>
-                            <h5 class="card-title">Vila</h5>
-                            <p class="card-text">Nikmati akomodasi mewah di vila</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Event -->
-                <div class="col-md-3">
-                    <div class="card service-card text-center">
-                        <div class="card-body">
-                            <i class="fas fa-calendar-alt fa-3x mb-3 text-primary"></i>
-                            <h5 class="card-title">Event</h5>
-                            <p class="card-text">Pesan tiket untuk acara menarik</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Bus -->
-                <div class="col-md-3">
-                    <div class="card service-card text-center">
-                        <div class="card-body">
-                            <i class="fas fa-bus fa-3x mb-3 text-primary"></i>
-                            <h5 class="card-title">Bus</h5>
-                            <p class="card-text">Pesan tiket bus perjalanan Anda</p>
+                            <i class="fas fa-car fa-3x mb-3"></i>
+                            <h5 class="card-title">Mobil Travel</h5>
+                            <p class="card-text">Sewa mobil Travel untuk liburan Anda</p>
+                            <a href="Travel.php" class="btn btn-light">Pesan Sekarang</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
 
     <!-- About Section -->
     <section id="about" style="background-color: #f8f9fa;">
