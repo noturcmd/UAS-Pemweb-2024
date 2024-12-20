@@ -133,7 +133,7 @@
         </nav>
     </div>
     <div class="main">
-        <img src="https://storage.googleapis.com/a1aa/image/fbnIYbaX8uR2cqfDxxxyE7xDM4Exdd84ynIV9a5ycQrm3a4TA.jpg" alt="Airplane flying over clouds">
+        <img src="pesawat.png" alt="Airplane flying over clouds">
         <div class="overlay">
             <h1>Cek Harga Tiket Pesawat Online Murah dan Promo Hari Ini</h1>
             <div class="search-box">

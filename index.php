@@ -81,7 +81,7 @@
             color: white;
             padding: 20px;
             text-align: center;
-
+        }
             .service-card {
         background-size: cover;
         background-position: center;
@@ -96,23 +96,23 @@
         overflow: hidden;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
-
+        
         .service-card .card-body {
             z-index: 2; /* Supaya teks di atas background */
         }
 
         /* Background untuk setiap layanan */
-        .service-card.train {
-            background-image: url('assets/train.jpg');
+        .service-card.kereta {
+            background-image: url('assets/kereta.jpg');
         }
-        .service-card.plane {
-            background-image: url('assets/plane.png');
+        .service-card.pesawat {
+            background-image: url('assets/pesawat.png');
         }
         .service-card.hotel {
             background-image: url('assets/hotel.jpg');
         }
-        .service-card.car {
-            background-image: url('assets/car.jpg');
+        .service-card.mobil {
+            background-image: url('assets/mobil.jpg');
         }
 
         /* Overlay untuk membuat teks lebih jelas */
@@ -126,6 +126,7 @@
             background: rgba(0, 0, 0, 0.4); /* Overlay transparan */
             z-index: 1;
         }
+    
     </style>
 </head>
 <body>
@@ -206,7 +207,7 @@
                         <div class="card-body">
                             <i class="fas fa-car fa-3x mb-3"></i>
                             <h5 class="card-title">Mobil Travel</h5>
-                            <p class="card-text">Sewa mobil Travel untuk liburan Anda</p>
+                            <p class="card-text">Sewa mobil Travel untuk liburan dan perjalanan Anda</p>
                             <a href="Travel.php" class="btn btn-light">Pesan Sekarang</a>
                         </div>
                     </div>
